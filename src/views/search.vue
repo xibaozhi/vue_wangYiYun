@@ -12,6 +12,7 @@
         @search="onSearch"
         placeholder="想听听什么" />
       </div>
+      <v-scroll>
       <div class="search-history" v-if="!query">
         <!-- <span class="item" v-for="(item, index) in searchHistory" :key="index">{{item}}</span> -->
         <v-history :searchHistory="searchHistory" @searchThis="searchThis"></v-history>
@@ -21,7 +22,7 @@
       </div>
       <div class="search-hot" v-show="!query">
         <h1>热搜榜</h1>
-        <v-scroll>
+        
           <div class="hot-key">
             <ul>
               <li class="item" @click="searchThis(item.searchWord)" v-for="(item, index) in hotKey" :key="index">
@@ -33,8 +34,9 @@
               </li>
             </ul>
           </div>
-        </v-scroll>
+        
       </div>
+      </v-scroll>
     </div>
   </div>
 </template>

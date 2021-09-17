@@ -159,7 +159,7 @@ export default {
 <style lang="less">
 @import "../assets/css/function.less";
 .home-scroll{
-  .px2rem(height, 1150);
+  .px2rem(height, 1100);
   // height: 60%;
   overflow: hidden;
   .home{

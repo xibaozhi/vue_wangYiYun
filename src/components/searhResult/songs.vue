@@ -71,7 +71,7 @@ export default {
 @import "../../assets/css/function.less";
 .songs-scroll{
   .px2rem(padding-top, 20);
-  .px2rem(height, 1100);
+  .px2rem(height, 1050);
   box-sizing: border-box;
   overflow: hidden;
   .songs-list {
